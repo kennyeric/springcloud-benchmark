@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: microservice
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+endpoints:
+  sensitive: false
+  shutdown:
+    enabled: true
+  pause:
+    enabled: true
+  resume:
+    enabled: true
+  restart:
+    enabled: true
+
+
